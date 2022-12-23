@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(14, 14, 14, 0.871);
+            display: grid;
+            place-items: center;
+        }
+
+        .loader{
+            width: 50%;
+            height: 30%;
+            background-color: none;
+            display: grid;
+            place-items: center;
+        }
+
+        .load{
+            width: 100px;
+            height: 100px;
+            background-color: none;
+            border-radius: 50%;
+            border: 5px solid white;
+            border-top: 5px solid rgb(255, 140, 0);
+            animation: load 1s linear infinite;
+        }
+
+        @keyframes load {
+            0%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="loader">
+            <div class="load"></div>
+        </div>
+    </div>
+</body>
+</html>
